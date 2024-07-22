@@ -100,6 +100,17 @@
         <header>
             <h1>xirk dev blog</h1>
         </header>
+
+        <script>
+            function toggleBlur() {
+                var container = document.querySelector('.container');
+                if (container.style.filter == 'blur(1px)' || container.style.filter == 'blur(0.5px)') {
+                    container.style.filter = 'none';
+                } else {
+                    container.style.filter = 'blur(1px)';
+                }
+            }
+        </script>
         
         <main>
             <div class="blog-post" id="220720242051">
@@ -116,6 +127,7 @@
         
         <footer>
             <ul>
+                <li><a onclick="toggleBlur()">blur</a></li>
                 <li><a href="https://github.com/xirkorg">github</a></li>
                 <li><a href="https://discord.gg/64xzkpANDG">discord</a></li>
                 <li><a href="https://wink.messengergeek.com/t/msnp-server-in-node/24559">messengergeek post</a></li>
